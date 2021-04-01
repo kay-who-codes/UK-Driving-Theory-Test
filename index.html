@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="body">
+
+    
+   <!-- Nav bar -->
+<nav class="navbar navbar-dark bg-dark pl-5">
+    <a class="navbar-brand" href="#">
+      <img src="https://img.icons8.com/fluent/48/000000/car.png"/>
+      <spam class="pl-2">Mock ICBC Driving Exam</spam>
+     
+    </a>
+  </nav>
+        <!-- Initial Loaded page  -->
+  <div class="home-box custom-box">
+      <h3>Instruction:</h3>
+      <p>Total number of questions: <span class="total-question"></span></p>
+      <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Box is hidden till startQuiz() clicked -->
+  <div class="quiz-box custom-box hide">
+      <div class="question-number">
+          
+      </div>
+      <div class="question-text">
+         
+      </div>
+      <div class="option-container">
+          
+      </div>
+      <div class="next-question-btn">
+         <button type="button" class="btn" onclick="next()">Next</button>
+      </div>
+      <div class="answers-indicator">
+        
+      </div>
+  </div>
+<!-- When Quiz ends Hide is removed -->
+  <div class="result-box custom-box hide">
+      <h1>Quiz Result</h1>
+      <table>
+         <tr>
+             <td>Total Question</td>
+             <td><span class="total-question"></span></td>
+         </tr>
+         <tr>
+             <td>Attempt</td>
+             <td><span class="total-attempt"></span></td>
+         </tr>
+         <tr>
+             <td>Correct</td>
+             <td><span class="total-correct"></span></td>
+         </tr>
+         <tr>
+             <td>Wrong</td>
+             <td><span class="total-wrong"></span></td>
+         </tr>
+         <tr>
+             <td>Percentage</td>
+             <td><span class="percentage"></span></td>
+         </tr>
+         <tr>
+             <td>Your Total Score</td>
+             <td><span class="total-score"></span></td>
+         </tr>
+      </table>
+      
+      <!-- Try Again -->
+      <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+      <!-- Go Home -->
+      <button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+  </div>
+
+
+<script src="JS/quiz-questions.js"></script>
+<script src="JS/quiz-app.js"></script>
+</body>
+</html>
