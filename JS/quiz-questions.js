@@ -147,7 +147,7 @@
       q:'If driving on a slippery road would you drive at the posted speed limit?',
       options:['Yes, as long as I don&#44;t go over the speed limit I should be able to avoid skidding.',
       'I can decide to choose a reduced speed that is safe or increase my following distance with other vehicles to avoid skidding.',
-      'Only if my vehicle’s tires were designed for all weather conditions.',
+      'Only if my vehicles tires were designed for all weather conditions.',
       'Only if I have snow tires on my vehicle.'],
       answer:1,
     },
