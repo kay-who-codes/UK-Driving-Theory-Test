@@ -6,3 +6,4 @@ Quiz Application
 - AWS Amplify hosted
 
 
+live Preview : https://main.dm7amdyeszue9.amplifyapp.com/
