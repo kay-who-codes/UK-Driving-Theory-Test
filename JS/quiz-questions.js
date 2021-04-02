@@ -10,7 +10,7 @@
     },
     // Q2
     {
-        q:'What color What should the driver of Car A do? a banana?',
+        q:'What color What should the driver of Car A do?',
         options:['Maintain speed','Slow down, honk, and wave Car B in.','Slow down to allow Car B safe entry.','blSpeed up to get ahead of merging Car B.ue'],
         answer:2,
         img: 'img/Q2.png'

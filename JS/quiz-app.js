@@ -1,3 +1,4 @@
+// asign element to specified value 
 const questionNumber = document.querySelector(".question-number");
  const questionText = document.querySelector(".question-text");
  const optionContainer = document.querySelector(".option-container");
@@ -5,13 +6,33 @@ const questionNumber = document.querySelector(".question-number");
  const homeBox = document.querySelector(".home-box");
  const quizBox = document.querySelector(".quiz-box");
  const resultBox = document.querySelector(".result-box");
- const questionLimit = quiz.length; // if you want all questions "quiz.length"
+ const questionLimit = quiz.length;
  let questionCounter = 0;
  let currentQuestion;
  let availableQuestions = [];
  let availableOptions = [];
  let correctAnswers = 0;
  let attempt = 0;
+
+ // ---- HOME SCREEN ----
+ function startQuiz(){
+    
+    // hide home box 
+    homeBox.classList.add("hide");
+    // show quiz Box
+    quizBox.classList.remove("hide");
+   // first we will set all questions in availableQuestions Array
+   setAvailableQuestions();
+   // second we will call getNewQuestion(); function
+   getNewQuestion();
+   // to create indicator of answers
+   answersIndicator();
+
+}
+// Dis play question Limit
+window.onload = function (){
+	homeBox.querySelector(".total-question").innerHTML = questionLimit;
+}
 
  // push the questions into  availableQuestions Array
  function setAvailableQuestions(){
@@ -103,7 +124,7 @@ const questionNumber = document.querySelector(".question-number");
    unclickableOptions();
  }
  
- // make all the options unclickable once the user select a option (RESTRICT THE USER TO CHANGE THE OPTION AGAIN)
+ // make all the options unclickable once the user select a option 
  function unclickableOptions(){
     const optionLen = optionContainer.children.length;
     for(let i=0 ; i<optionLen; i++){
@@ -122,7 +143,7 @@ const questionNumber = document.querySelector(".question-number");
  function updateAnswerIndicator(markType){
      answersIndicatorContainer.children[questionCounter-1].classList.add(markType);
  }
-
+// Next Question Function / If QC = QL call QuizOver()
  function next(){
    if(questionCounter === questionLimit){
    	  quizOver();
@@ -132,6 +153,9 @@ const questionNumber = document.querySelector(".question-number");
    }
  }
 
+//  -- QUIZ END -- 
+
+// Quiz over function. 
  function quizOver(){
  	// hide quiz Box
  	quizBox.classList.add("hide");
@@ -149,7 +173,7 @@ const questionNumber = document.querySelector(".question-number");
    resultBox.querySelector(".percentage").innerHTML =percentage.toFixed(2) + "%";
    resultBox.querySelector(".total-score").innerHTML =correctAnswers +" / " + questionLimit;
  }
-
+// reset all counter to zero  
  function resetQuiz(){
     questionCounter = 0;
     correctAnswers = 0;
@@ -165,7 +189,7 @@ const questionNumber = document.querySelector(".question-number");
      resetQuiz();
      startQuiz();
  }
-
+// Gock to the start page, Hide all other boxs
  function goToHome(){
  	// hide result Box
  	resultBox.classList.add("hide");
@@ -174,26 +198,7 @@ const questionNumber = document.querySelector(".question-number");
  	resetQuiz();
  }
  
- // #### STARTING POINT ####
-
- function startQuiz(){
-    
-     // hide home box 
-     homeBox.classList.add("hide");
-     // show quiz Box
-     quizBox.classList.remove("hide");
-    // first we will set all questions in availableQuestions Array
-    setAvailableQuestions();
-    // second we will call getNewQuestion(); function
-    getNewQuestion();
-    // to create indicator of answers
-    answersIndicator();
-
- }
 
 
-window.onload = function (){
-	homeBox.querySelector(".total-question").innerHTML = questionLimit;
-}
 
 

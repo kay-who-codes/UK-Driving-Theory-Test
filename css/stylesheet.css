@@ -1,10 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); */
 
- 
 .body{
 	margin: 0;
 	font-size: 16px;
-	background-color: #009688;
+	background-color: #06aef0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 }
@@ -19,10 +17,16 @@
 .custom-box{
 	max-width: 700px;
 	background-color: #ffffff;
+	border: solid black 2px;
 	margin:40px auto;
 	padding: 30px;
 	border-radius: 10px;
 	animation: fadeInRight 1s ease;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+	0 2px 2px rgba(0,0,0,0.12), 
+	0 4px 4px rgba(0,0,0,0.12), 
+	0 8px 8px rgba(0,0,0,0.12),
+	0 16px 16px rgba(0,0,0,0.12);
 }
 @keyframes fadeInRight{
 	0%{
@@ -67,7 +71,7 @@
 }
 .btn{
 	padding: 15px 45px;
-	background-color: #009688;
+	background-color: #06aef0;
 	color:#ffffff;
 	border:none;
 	border-radius: 5px;
@@ -75,6 +79,14 @@
 	font-size: 16px;
 	cursor: pointer;
 	display: inline-block;
+	
+}
+.btn:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+	0 2px 2px rgba(0,0,0,0.12), 
+	0 4px 4px rgba(0,0,0,0.12), 
+	0 8px 8px rgba(0,0,0,0.12),
+	0 16px 16px rgba(0,0,0,0.12);
 }
 
 .quiz-box .question-number,
@@ -87,7 +99,7 @@
 }
 .quiz-box .question-number{
 	font-size: 18px;
-	color:#009688;
+	color:#06aef0;
 	font-weight: 600;
 	border-bottom:1px solid #cccccc;
 	padding-bottom: 10px;
@@ -139,7 +151,7 @@
  top:0;
  height: 100%;
  width: 100%;
- background-color: rgb(60, 187, 60);
+ background-color: rgb(46, 161, 46);
  z-index: -1;
  animation: slideInLeft .5s ease forwards
 }
@@ -184,18 +196,11 @@
 	margin-top: 15px;
 }
 .quiz-box .answers-indicator div.correct{
-	background-color: rgb(60, 187, 60);
-	background-image: url("../img/correct.png");
-	background-size: 50%;
-	background-repeat: no-repeat;
-	background-position: center;
+	background-color: rgb(46, 161, 46);
+
 }
 .quiz-box .answers-indicator div.wrong{
 	background-color: rgb(185, 39, 39);
-	background-image: url("../img/wrong.png");
-	background-size: 50%;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .result-box{
