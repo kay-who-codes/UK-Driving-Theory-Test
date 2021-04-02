@@ -184,7 +184,7 @@
     {
         q:'If a pedestrian is crossing the street with a guide dog, a driver should',
         options:['Drive closer to them as they are listening for the sounds of vehicles.',
-        'Give a short honk on the horn to let them know it’s alright to cross.',
+        'Give a short honk on the horn to let them know its alright to cross.',
         'Not treat them differently than any other pedestrian.',
         'Give them extra room as they may be uncertain about where traffic is in relation to them. '],
         answer:3,
