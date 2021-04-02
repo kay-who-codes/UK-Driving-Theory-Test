@@ -5,4 +5,4 @@ Quiz Application
 - CSS
 - AWS Amplify hosted
 
-Questions taken from the https://practicetest.icbc.com/#/opkt 
+

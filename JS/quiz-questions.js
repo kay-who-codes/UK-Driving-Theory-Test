@@ -192,7 +192,7 @@
     // Q22
     {
         q:'If you are going into a curve at high speed, why is taking your foot off the accelerator a good idea before the curve?',
-        options:['you’ll always need to brake while in the curve',
+        options:['youll always need to brake while in the curve',
         'you will need power to accelerate while in the curve.',
         'your foot should never be over the accelerator in a curve',
         'it is a good strategy to help slow you down without using your brakes in the curve.'],
