@@ -3,7 +3,7 @@
 
 A web-based mock driving theory test app designed to help users practice and test their knowledge in preparation for a driving theory exam. The app provides an unlimited time quiz with instant feedback and results, including the number of correct, incorrect, and total attempts.
 
-[![App Image](Non-App/App%20Image.png)](https://kay-who-codes.github.io/UK-Driving-Theory-Quiz)
+[![App Image](Non-App/App%20Image.png)](https://kay-who-codes.github.io/UK-Driving-Theory-Test)
 
 ## Features
 
@@ -16,7 +16,7 @@ A web-based mock driving theory test app designed to help users practice and tes
 
 ## Usage
 
-1. Open the app in a browser - **[LINK TO THE APP](https://kay-who-codes.github.io/Mock-Driving-Theory-Test)**.
+1. Open the app in a browser - **[LINK TO THE APP](https://kay-who-codes.github.io/UK-Driving-Theory-Test)**.
 2. Click **Start Quiz** to begin the test.
 3. Answer each question by selecting one of the options.
 4. After completing all the questions, the results page will appear showing your score, percentage, and the correct answers to any questions you may have answered incorrectly.
