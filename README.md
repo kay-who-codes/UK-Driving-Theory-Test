@@ -1,5 +1,5 @@
 
-# UK Driving Theory Quiz
+# 🚗 UK Driving Theory Test
 
 A web-based mock driving theory test app designed to help users practice and test their knowledge in preparation for a driving theory exam. The app provides an unlimited time quiz with instant feedback and results, including the number of correct, incorrect, and total attempts.
 
